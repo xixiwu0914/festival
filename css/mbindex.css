@@ -1,0 +1,327 @@
+div,img,a{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;}
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+
+            
+  }
+body,html{
+	background-color: black;
+	overflow-x: hidden;
+}
+a{
+	list-style: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*横屏幕*/
+.orientation{width:100%;height:100%;overflow:hidden;background:#000;position: fixed;z-index:999;}
+.orientation>img{position: absolute;width:30%;height:auto;top:0;left:0;bottom: 0;right:0;  margin: auto;}
+@media screen and (orientation: portrait) {
+  .orientation{display: none}
+}
+@media screen and (orientation: landscape) {
+   .orientation{display: block}
+}
+
+.loading{display: none;}
+/*背景层*/
+.background{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-image: url('http://h5-cdn.mobage.cn/fwg/static/PCH5/mbimages/background.jpg');
+	background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+/*人物层*/
+.container{
+	width: 100%;
+	height:900%; 
+}
+.firstscreen{
+	width: 100%;
+	height: 169vw;
+	position: absolute;
+	background-image: url('http://h5-cdn.mobage.cn/fwg/static/PCH5/mbimages/mb_02.png');
+	background-repeat:no-repeat;
+    background-position:center;
+    background-size: 100% auto; 
+    z-index: 1;
+    /*opacity: 0.4;*/
+    /*background-color: pink;*/
+}
+.secondscreen{
+	width: 100%;
+	height: 130vw;
+	margin-top:169vw;
+	position: absolute;
+	background-image: url('http://h5-cdn.mobage.cn/fwg/static/PCH5/mbimages/mb_04.png');
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-size: 100% auto; 
+    z-index: 1;
+    /*background-color: green;*/
+
+}
+.thirdscreen{
+	width: 100%;
+	height:195.5vw;
+	margin-top:299vw;
+	position: absolute;
+	background-image: url('http://h5-cdn.mobage.cn/fwg/static/PCH5/mbimages/mb_05.png');
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-size: 100% auto; 
+    z-index: 1;
+    /*background-color: red;*/
+}
+.fourthscreen{
+	width: 100%;
+	height:242vw ;
+	margin-top:494.5vw;
+	position: absolute;
+	background-image: url('http://h5-cdn.mobage.cn/fwg/static/PCH5/mbimages/mb_06.png');
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-size: 100% auto; 
+    z-index: 1;
+    /*background-color: yellow;*/
+}
+.fifthscreen{
+	width: 100%;
+	height: 156.5vw;
+	margin-top:736.5vw;
+	position: absolute;
+	background-image: url('http://h5-cdn.mobage.cn/fwg/static/PCH5/mbimages/mb_07.png');
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-size: 100% auto; 
+    z-index: 1;
+    /*background-color: pink;*/
+}
+.sixthscreen{
+	width: 100%;
+	height: 331vw;
+	margin-top:893vw;
+	position: absolute;
+	background-image: url('http://h5-cdn.mobage.cn/fwg/static/PCH5/mbimages/mb_08.png');
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-size: 100% auto; 
+    z-index: 1;
+    /*background-color: red;*/
+}
+/*第一屏按钮*/
+.mb_butt_03{
+	position: absolute;
+    left: 76vw;
+    top: 5vw;
+    width: 22vw
+}
+.mb_butt_07{
+	position:absolute;
+	left: 4vw;
+	top:129vw;
+	width: 45vw;
+	cursor: pointer;
+	
+	/*background-color: red;*/
+}
+.mb_butt_10{
+	position:absolute;
+	left: 52vw;
+	top:129vw;
+	width: 45vw;	
+	cursor: pointer;
+}
+
+.mb_butt_15{
+	position:absolute;
+	left: 29vw;
+	top:144vw;
+	width: 42vw;	
+}
+/*第二屏按钮*/
+.mb_butt_19{
+	position: absolute;
+    left: 88vw;
+    top: 171vw;
+    width: 9vw;
+    z-index: 9;
+}
+.mb_butt_22{
+	position: absolute;
+    left: 29vw;
+    top: 69.5vw;
+    width: 42vw;
+}
+.mb_butt_24{
+	position: absolute;
+    left: 7vw;
+    top: 81.5vw;
+    width: 42vw;
+}
+.mb_butt_26{
+	position: absolute;
+    left: 52vw;
+    top: 81.5vw;
+    width: 42vw;
+}
+.mb_butt_31{
+	position: absolute;
+    left: 7vw;
+    top: 97.5vw;
+    width: 42vw;
+}
+.mb_butt_30{
+	position: absolute;
+    left: 52vw;
+    top: 97.5vw;
+    width: 42vw;
+}
+/*第三屏按钮*/
+.mb_butt_19a{
+	position: absolute;
+    left: 88vw;
+    top: 1.5vw;
+    width: 9vw;
+}
+.mb_butt_35{
+	position: absolute;
+    left: 25vw;
+    top: 95.5vw;
+    width: 50vw;
+}
+.mb_butt_39{
+	position: absolute;
+    left: 6vw;
+    top: 163.5vw;
+    width: 42vw;
+}
+.mb_butt_41{
+	position: absolute;
+    left: 52vw;
+    top: 163.5vw;
+    width: 42vw;
+}
+/*第四屏按钮*/
+.mb_butt_19b{
+	position: absolute;
+    left: 88vw;
+    top: 2vw;
+    width: 9vw;
+}
+.mb_butt_46{
+	position: absolute;
+    left: 25vw;
+    top: 216vw;
+    width: 50vw;
+}
+.mb_butt_19c{
+	position: absolute;
+    left: 88vw;
+    top: 1.5vw;
+    width: 9vw;
+}
+.mb_butt_49{
+	position: absolute;
+    left: 25vw;
+    top: 86vw;
+    width: 50vw;
+}
+.mb_butt_51{
+	position: absolute;
+    left: 25vw;
+    top: 126vw;
+    width: 50vw;
+}
+/*第六屏*/
+.mb_butt_19d{
+	position: absolute;
+    left: 88vw;
+    top: 2vw;
+    width: 9vw;
+}
+.mb_butt_54{
+	position: absolute;
+    left: 21vw;
+    top: 151vw;
+    width: 58vw;
+}
+.mb_butt_57{
+	position: absolute;
+    left: 21vw;
+    top: 318vw;
+    width: 58vw;
+}
+
+.footer {
+   position: absolute;
+    top: 1234vw;
+    z-index: 99;
+    margin-bottom: 6vw;
+}
+.footer a {
+  position: static;
+  text-decoration: none;
+}
+.footer > img {
+  display: block;
+  width: 100%;
+
+}
+/*.stop{
+	position: fixed;
+	left: 88vw;
+    top: 2vw;
+    width: 9vw;
+}*/
+.daohang_03{
+	z-index: 3;
+	width: 100vw;
+}
+/*半透明框*/
+.zhezhao{
+
+	position: fixed;
+	top:0;
+	background-color: rgba(0,0,0,0.9);
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	left: 100%;
+	transition: left 0.5s;
+}
+/*动画效果*/
+.add{
+	left: 0;
+}
+/*导航条的透明框*/
+.navmobie{position:absolute;width:100%;height: 100%;top: 0;}
+.navmobie>div{
+	position:absolute;
+	width: 50vw;
+	height: 10vw;
+	left: 25vw;
+	/*background-color: red;*/
+	z-index: 2;
+	/*opacity: 0.5*/
+}
+.celebration{	
+	top:31vw;	
+}
+.miss{
+	top:49.5vw;	
+}
+.newhero{	
+	top:68vw;	
+}
+.newhelp{	
+	top:86vw;	
+}
+.true{
+	top:104vw;
+}
